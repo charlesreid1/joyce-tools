@@ -77,6 +77,8 @@ with open(STASHFILE,"a") as f:
 
         # This is a lot of tedious copypasta...
 
+        sp14 = " "*14
+
 
         #####################################
 
@@ -86,7 +88,7 @@ with open(STASHFILE,"a") as f:
 
             print("-"*40, file=f)
             print("Matched pattern \"the XXX said\"", file=f)
-            print("Original:\t%s"%(original_text), file=f)
+            print("Original:\n%s\n"%(sp14+original_text), file=f)
 
             orig_txt = re.sub('\n','@@@',original_text)
 
@@ -96,8 +98,8 @@ with open(STASHFILE,"a") as f:
             new_txt_co = re.sub('@@@','\n',new_text_closeopen)
             new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-            print("Fix 1:\t\t%s"%(new_txt_co ), file=f)
-            print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+            print("Fix 1:\n%s\n"%(sp14+new_txt_co ), file=f)
+            print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
     
 
         ##############################
@@ -110,7 +112,7 @@ with open(STASHFILE,"a") as f:
             if(match2.group(1)=='he' or match2.group(1)=='she'):
                 print("-"*40, file=f)
                 print("Matched pattern \"he said, \" or \"she said, \"", file=f)
-                print("Original:\t%s"%(original_text), file=f)
+                print("Original:\n%s\n"%(sp14+original_text), file=f)
 
                 orig_txt = re.sub('\n','@@@',original_text)
 
@@ -120,15 +122,15 @@ with open(STASHFILE,"a") as f:
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
                 new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-                print("Fix 1:\t\t%s"%(new_txt_co), file=f)
-                print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+                print("Fix 1:\n%s\n"%(sp14+new_txt_co), file=f)
+                print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
     
             else:
                 likely_speaker = match2.group(1)
                 print("-"*40, file=f)
                 print("Matched pattern \"XXX said, \"", file=f)
                 print("Likely Speaker: %s"%(likely_speaker), file=f)
-                print("Original:\t%s"%(original_text), file=f)
+                print("Original:\n%s\n"%(sp14+original_text), file=f)
 
                 orig_txt = re.sub('\n','@@@',original_text)
     
@@ -138,8 +140,8 @@ with open(STASHFILE,"a") as f:
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
                 new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-                print("Fix 1:\t\t%s"%(new_txt_co ), file=f)
-                print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+                print("Fix 1:\n%s\n"%(sp14+new_txt_co ), file=f)
+                print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
 
 
 
@@ -156,7 +158,7 @@ with open(STASHFILE,"a") as f:
             print("-"*40, file=f)
             print("Matched pattern \"the XXX said \"", file=f)
             print("Likely Speaker: %s"%(likely_speaker), file=f)
-            print("Original:\t%s"%(original_text), file=f)
+            print("Original:\n%s\n"%(sp14+original_text), file=f)
     
             orig_txt = re.sub('\n','@@@',original_text)
 
@@ -166,8 +168,8 @@ with open(STASHFILE,"a") as f:
             new_txt_co = re.sub('@@@','\n',new_text_closeopen)
             new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-            print("Fix 1:\t\t%s"%(new_txt_co ), file=f)
-            print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+            print("Fix 1:\n%s\n"%(sp14+new_txt_co ), file=f)
+            print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
 
 
 
@@ -182,7 +184,7 @@ with open(STASHFILE,"a") as f:
             if(match3.group(1)=='he' or match3.group(1)=='she'):
                 print("-"*40, file=f)
                 print("Matched pattern \"he said \" or \"she said \"", file=f)
-                print("Original:\t%s"%(original_text), file=f)
+                print("Original:\n%s\n"%(sp14+original_text), file=f)
 
                 orig_txt = re.sub('\n','@@@',original_text)
 
@@ -192,15 +194,15 @@ with open(STASHFILE,"a") as f:
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
                 new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-                print("Fix 1:\t\t%s"%(new_txt_co ), file=f)
-                print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+                print("Fix 1:\n%s\n"%(sp14+new_txt_co ), file=f)
+                print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
     
             else:
                 likely_speaker = match3.group(1)
                 print("-"*40, file=f)
                 print("Matched pattern \"XXX said \"", file=f)
                 print("Likely Speaker: %s"%(likely_speaker), file=f)
-                print("Original:\t%s"%(original_text), file=f)
+                print("Original:\n%s\n"%(sp14+original_text), file=f)
     
                 orig_txt = re.sub('\n','@@@',original_text)
 
@@ -210,8 +212,8 @@ with open(STASHFILE,"a") as f:
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
                 new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-                print("Fix 1:\t\t%s"%(new_txt_co ), file=f)
-                print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+                print("Fix 1:\n%s\n"%(sp14+new_txt_co ), file=f)
+                print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
 
 
 
@@ -225,7 +227,7 @@ with open(STASHFILE,"a") as f:
             print("-"*40, file=f)
             print("Matched pattern \"the XXX said.\"", file=f)
             print("Likely Speaker: %s"%(likely_speaker), file=f)
-            print("Original:\t%s"%(original_text), file=f)
+            print("Original:\n%s\n"%(sp14+original_text), file=f)
     
             orig_txt = re.sub('\n','@@@',original_text)
 
@@ -235,8 +237,8 @@ with open(STASHFILE,"a") as f:
             new_txt_co = re.sub('@@@','\n',new_text_closeopen)
             new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-            print("Fix 1:\t\t%s"%(new_txt_co ), file=f)
-            print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+            print("Fix 1:\n%s\n"%(sp14+new_txt_co ), file=f)
+            print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
 
 
 
@@ -251,7 +253,7 @@ with open(STASHFILE,"a") as f:
             if(match4.group(1)=='he' or match4.group(1)=='she'):
                 print("-"*40, file=f)
                 print("Matched pattern \"he said.\" or \"she said.\"", file=f)
-                print("Original:\t%s"%(original_text), file=f)
+                print("Original:\n%s\n"%(sp14+original_text), file=f)
 
                 orig_txt = re.sub('\n','@@@',original_text)
 
@@ -261,15 +263,15 @@ with open(STASHFILE,"a") as f:
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
                 new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-                print("Fix 1:\t\t%s"%(new_txt_co ), file=f)
-                print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+                print("Fix 1:\n%s\n"%(sp14+new_txt_co ), file=f)
+                print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
     
             else:
                 likely_speaker = match4.group(1)
                 print("-"*40, file=f)
                 print("Matched pattern \"XXX said.\"", file=f)
                 print("Likely Speaker: %s"%(likely_speaker), file=f)
-                print("Original:\t%s"%(original_text), file=f)
+                print("Original:\n%s\n"%(sp14+original_text), file=f)
     
                 orig_txt = re.sub('\n','@@@',original_text)
 
@@ -279,6 +281,6 @@ with open(STASHFILE,"a") as f:
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
                 new_txt_cno = re.sub('@@@','\n',new_text_closenoopen)
 
-                print("Fix 1:\t\t%s"%(new_txt_co ), file=f)
-                print("Fix 2:\t\t%s"%(new_txt_cno), file=f)
+                print("Fix 1:\n%s\n"%(sp14+new_txt_co ), file=f)
+                print("Fix 2:\n%s\n"%(sp14+new_txt_cno), file=f)
 
