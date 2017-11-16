@@ -1,6 +1,11 @@
 from bs4 import BeautifulSoup
 import subprocess
 import re
+import sys
+
+if(sys.version[0]!='3'):
+    raise Exception("Error: run this script with Python 3!")
+
 
 ## Test
 #FILENAME = 'portrait_short.xml'
@@ -73,6 +78,7 @@ with open(STASHFILE,"a") as f:
     for said in said_tags:
 
         original_text = str(said)
+        original_speaker = said['who']
 
 
         # This is a lot of tedious copypasta...
@@ -92,7 +98,7 @@ with open(STASHFILE,"a") as f:
 
             orig_txt = re.sub('\n','@@@',original_text)
 
-            new_text_closeopen   = re.sub(r'(.*)( the \w+ said)(.*)</said>', r'\1</said>\2<said who="???">\3</said>', orig_txt)
+            new_text_closeopen   = re.sub(r'(.*)( the \w+ said)(.*)</said>', r'\1</said>\2<said who="'+original_speaker+r'">\3</said>', orig_txt)
             new_text_closenoopen = re.sub(r'(.*)( the \w+ said)(.*)</said>', r'\1</said>\2\3', orig_txt)
 
             new_txt_co = re.sub('@@@','\n',new_text_closeopen)
@@ -116,7 +122,7 @@ with open(STASHFILE,"a") as f:
 
                 orig_txt = re.sub('\n','@@@',original_text)
 
-                new_text_closeopen   = re.sub(r'(.*)( \w+ said, )(.*)</said>', r'\1</said>\2<said who="???">\3</said>', orig_txt)
+                new_text_closeopen   = re.sub(r'(.*)( \w+ said, )(.*)</said>', r'\1</said>\2<said who="'+original_speaker+r'">\3</said>', orig_txt)
                 new_text_closenoopen = re.sub(r'(.*)( \w+ said, )(.*)</said>', r'\1</said>\2\3', orig_txt)
 
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
@@ -188,7 +194,7 @@ with open(STASHFILE,"a") as f:
 
                 orig_txt = re.sub('\n','@@@',original_text)
 
-                new_text_closeopen   = re.sub(r'(.*)( \w+ said )(.*)</said>', r'\1</said>\2<said who="???">\3</said>', orig_txt)
+                new_text_closeopen   = re.sub(r'(.*)( \w+ said )(.*)</said>', r'\1</said>\2<said who="'+original_speaker+r'">\3</said>', orig_txt)
                 new_text_closenoopen = re.sub(r'(.*)( \w+ said )(.*)</said>', r'\1</said>\2\3', orig_txt)
 
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
@@ -257,7 +263,7 @@ with open(STASHFILE,"a") as f:
 
                 orig_txt = re.sub('\n','@@@',original_text)
 
-                new_text_closeopen   = re.sub(r'(.*)( \w+ said\. )(.*)</said>', r'\1</said>\2<said who="???">\3</said>', orig_txt)
+                new_text_closeopen   = re.sub(r'(.*)( \w+ said\. )(.*)</said>', r'\1</said>\2<said who="'+original_speaker+r'">\3</said>', orig_txt)
                 new_text_closenoopen = re.sub(r'(.*)( \w+ said\. )(.*)</said>', r'\1</said>\2\3', orig_txt)
 
                 new_txt_co = re.sub('@@@','\n',new_text_closeopen)
