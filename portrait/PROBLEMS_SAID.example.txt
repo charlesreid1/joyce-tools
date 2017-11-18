@@ -1,86 +1,10 @@
 ----------------------------------------
-Matched pattern "he said." or "she said."
-Original:
-              <said who="Athy">―Ah, do! he said. <lb n="10569"></lb></said>
-
-Fix 1:
-              <said who="Athy">―Ah, do!</said> he said. <said who="???"><lb n="10569"></lb></said>
-
-Fix 2:
-              <said who="Athy">―Ah, do!</said> he said. <lb n="10569"></lb>
-
-----------------------------------------
-Matched pattern "the XXX said."
-Likely Speaker: fellow
-Original:
-              <said who="Athy">―Will I? the fellow said. I'm not well yet. <lb n="10572"></lb></said>
-
-Fix 1:
-              <said who="Athy">―Will I? the fellow said. I'm not well yet. <lb n="10572"></lb></said>
-
-Fix 2:
-              <said who="Athy">―Will I? the fellow said. I'm not well yet. <lb n="10572"></lb></said>
-
-----------------------------------------
-Matched pattern "he said." or "she said."
-Original:
-              <said who="Athy">―Now it is all about politics in the paper, he said. Do your <lb n="10633"></lb>
-             people talk about that too? <lb n="10634"></lb></said>
-
-Fix 1:
-              <said who="Athy">―Now it is all about politics in the paper,</said> he said. <said who="???">Do your <lb n="10633"></lb>
-             people talk about that too? <lb n="10634"></lb></said>
-
-Fix 2:
-              <said who="Athy">―Now it is all about politics in the paper,</said> he said. Do your <lb n="10633"></lb>
-             people talk about that too? <lb n="10634"></lb>
-
-----------------------------------------
-Matched pattern "he said." or "she said."
-Original:
-              <said who="Athy">―Mine too, he said. <lb n="10636"></lb></said>
-
-Fix 1:
-              <said who="Athy">―Mine too,</said> he said. <said who="???"><lb n="10636"></lb></said>
-
-Fix 2:
-              <said who="Athy">―Mine too,</said> he said. <lb n="10636"></lb>
-
-----------------------------------------
-Matched pattern "he said." or "she said."
-Original:
-              <said who="Athy">―Because there is a thigh in it, he said. Do you see the joke? <lb n="10650"></lb>
-<placename> <persname> Athy </persname> </placename> is the town in the county <placename> Kildare </placename> and a thigh is the other <lb n="10651"></lb>
-             thigh. <lb n="10652"></lb></said>
-
-Fix 1:
-              <said who="Athy">―Because there is a thigh in it,</said> he said. <said who="???">Do you see the joke? <lb n="10650"></lb>
-<placename> <persname> Athy </persname> </placename> is the town in the county <placename> Kildare </placename> and a thigh is the other <lb n="10651"></lb>
-             thigh. <lb n="10652"></lb></said>
-
-Fix 2:
-              <said who="Athy">―Because there is a thigh in it,</said> he said. Do you see the joke? <lb n="10650"></lb>
-<placename> <persname> Athy </persname> </placename> is the town in the county <placename> Kildare </placename> and a thigh is the other <lb n="10651"></lb>
-             thigh. <lb n="10652"></lb>
-
-----------------------------------------
-Matched pattern "he said." or "she said."
-Original:
-              <said who="Athy">―That's an old riddle, he said. <lb n="10654"></lb></said>
-
-Fix 1:
-              <said who="Athy">―That's an old riddle,</said> he said. <said who="???"><lb n="10654"></lb></said>
-
-Fix 2:
-              <said who="Athy">―That's an old riddle,</said> he said. <lb n="10654"></lb>
-
-----------------------------------------
 Matched pattern "he said, " or "she said, "
 Original:
               <said who="Athy">―You know, he said, you can ask that riddle another way? <lb n="10658"></lb></said>
 
 Fix 1:
-              <said who="Athy">―You know,</said> he said, <said who="???">you can ask that riddle another way? <lb n="10658"></lb></said>
+              <said who="Athy">―You know,</said> he said, <said who="Athy">you can ask that riddle another way? <lb n="10658"></lb></said>
 
 Fix 2:
               <said who="Athy">―You know,</said> he said, you can ask that riddle another way? <lb n="10658"></lb>
@@ -92,7 +16,7 @@ Original:
              it?<lb n="10661"></lb></said>
 
 Fix 1:
-              <said who="Athy">―The same riddle,</said> he said. <said who="???">Do you know the other way to ask <lb n="10660"></lb>
+              <said who="Athy">―The same riddle,</said> he said. <said who="Athy">Do you know the other way to ask <lb n="10660"></lb>
              it?<lb n="10661"></lb></said>
 
 Fix 2:
@@ -105,7 +29,7 @@ Original:
               <said who="Athy">―Can you not think of the other way? he said. <lb n="10663"></lb></said>
 
 Fix 1:
-              <said who="Athy">―Can you not think of the other way?</said> he said. <said who="???"><lb n="10663"></lb></said>
+              <said who="Athy">―Can you not think of the other way?</said> he said. <said who="Athy"><lb n="10663"></lb></said>
 
 Fix 2:
               <said who="Athy">―Can you not think of the other way?</said> he said. <lb n="10663"></lb>
@@ -116,7 +40,7 @@ Original:
               <said who="Simon Dedalus">―A thimbleful, <persname>John</persname>, he said. Just to whet your appetite. <lb n="10757"></lb></said>
 
 Fix 1:
-              <said who="Simon Dedalus">―A thimbleful, <persname>John</persname>,</said> he said. <said who="???">Just to whet your appetite. <lb n="10757"></lb></said>
+              <said who="Simon Dedalus">―A thimbleful, <persname>John</persname>,</said> he said. <said who="Simon Dedalus">Just to whet your appetite. <lb n="10757"></lb></said>
 
 Fix 2:
               <said who="Simon Dedalus">―A thimbleful, <persname>John</persname>,</said> he said. Just to whet your appetite. <lb n="10757"></lb>
@@ -128,7 +52,7 @@ Original:
              warts on his bald head than in a pack of jack foxes. <lb n="10766"></lb></said>
 
 Fix 1:
-              <said who="Simon Dedalus">―Is it <persname>Christy</persname>?</said> he said. <said who="???">There's more cunning in one of those <lb n="10765"></lb>
+              <said who="Simon Dedalus">―Is it <persname>Christy</persname>?</said> he said. <said who="Simon Dedalus">There's more cunning in one of those <lb n="10765"></lb>
              warts on his bald head than in a pack of jack foxes. <lb n="10766"></lb></said>
 
 Fix 2:
@@ -141,7 +65,7 @@ Original:
               <said who="Mary Dedalus">―Sit over, she said. <lb n="10780"></lb></said>
 
 Fix 1:
-              <said who="Mary Dedalus">―Sit over,</said> she said. <said who="???"><lb n="10780"></lb></said>
+              <said who="Mary Dedalus">―Sit over,</said> she said. <said who="Mary Dedalus"><lb n="10780"></lb></said>
 
 Fix 2:
               <said who="Mary Dedalus">―Sit over,</said> she said. <lb n="10780"></lb>
@@ -183,7 +107,7 @@ Original:
              guts up in <place><location><geo>54.350280 -6.652792</geo></location><placename>Armagh</placename></place>? Respect! <lb n="10924"></lb> </said>
 
 Fix 1:
-              <said who="Simon Dedalus">―Respect!</said> he said. <said who="???">Is it for Billy with the lip or for the tub of <lb n="10923"></lb>
+              <said who="Simon Dedalus">―Respect!</said> he said. <said who="Simon Dedalus">Is it for Billy with the lip or for the tub of <lb n="10923"></lb>
              guts up in <place><location><geo>54.350280 -6.652792</geo></location><placename>Armagh</placename></place>? Respect! <lb n="10924"></lb> </said>
 
 Fix 2:
@@ -246,7 +170,7 @@ Original:
              end of the chapter. <lb n="11077"></lb></said>
 
 Fix 1:
-              <said who="Simon Dedalus">―Ah, John,</said> he said. <said who="???">It is true for them. We are an unfortunate <lb n="11075"></lb>
+              <said who="Simon Dedalus">―Ah, John,</said> he said. <said who="Simon Dedalus">It is true for them. We are an unfortunate <lb n="11075"></lb>
 <seg type="neologism">priestridden</seg> race and always were and always will be till the <lb n="11076"></lb>
              end of the chapter. <lb n="11077"></lb></said>
 
@@ -265,7 +189,7 @@ Original:
              two feet under his mahogany. <lb n="11088"></lb></said>
 
 Fix 1:
-              <said who="Simon Dedalus">―Do you see that old chap up there, John?</said> he said. <said who="???">He was a <lb n="11084"></lb>
+              <said who="Simon Dedalus">―Do you see that old chap up there, John?</said> he said. <said who="Simon Dedalus">He was a <lb n="11084"></lb>
              good Irishman when there was no money in the job. He was <lb n="11085"></lb>
              condemned to death as a whiteboy. But he had a saying about <lb n="11086"></lb>
              our clerical friends, that he would never let one of them put his <lb n="11087"></lb>
@@ -341,7 +265,7 @@ Original:
               <said who="Athy">―Ask him, he said. <lb n="11224"></lb></said>
 
 Fix 1:
-              <said who="Athy">―Ask him,</said> he said. <said who="???"><lb n="11224"></lb></said>
+              <said who="Athy">―Ask him,</said> he said. <said who="Athy"><lb n="11224"></lb></said>
 
 Fix 2:
               <said who="Athy">―Ask him,</said> he said. <lb n="11224"></lb>
@@ -500,7 +424,7 @@ Original:
           the wheel, old chap. You've had a fine long holiday. <lb n="20417"></lb> </said>
 
 Fix 1:
-              <said who="Simon Dedalus">―Now then, Stephen,</said> he said. <said who="???">You must put your shoulder to <lb n="20416"></lb>
+              <said who="Simon Dedalus">―Now then, Stephen,</said> he said. <said who="Simon Dedalus">You must put your shoulder to <lb n="20416"></lb>
           the wheel, old chap. You've had a fine long holiday. <lb n="20417"></lb> </said>
 
 Fix 2:
@@ -513,7 +437,7 @@ Original:
               <said who="Simon Dedalus">―Annoyed! Not he! <emph>Manly little chap!</emph> he said. <lb n="20441"></lb></said>
 
 Fix 1:
-              <said who="Simon Dedalus">―Annoyed! Not he! <emph>Manly little chap!</emph></said> he said. <said who="???"><lb n="20441"></lb></said>
+              <said who="Simon Dedalus">―Annoyed! Not he! <emph>Manly little chap!</emph></said> he said. <said who="Simon Dedalus"><lb n="20441"></lb></said>
 
 Fix 2:
               <said who="Simon Dedalus">―Annoyed! Not he! <emph>Manly little chap!</emph></said> he said. <lb n="20441"></lb>
@@ -525,7 +449,7 @@ Original:
           his father quickly. I'll be home after you. <lb n="20927"></lb></said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―I have to leave a message down in George's Street,</said> he said <said who="???">to <lb n="20926"></lb>
+              <said who="Stephen Dedalus">―I have to leave a message down in George's Street,</said> he said <said who="Stephen Dedalus">to <lb n="20926"></lb>
           his father quickly. I'll be home after you. <lb n="20927"></lb></said>
 
 Fix 2:
@@ -544,7 +468,7 @@ Original:
           out one fine May morning in the merry month of sweet July. <lb n="21301"></lb></said>
 
 Fix 1:
-              <said who="Simon Dedalus">―God help us!</said> he said <said who="???">piously. To think of the men of those <lb n="21295"></lb>
+              <said who="Simon Dedalus">―God help us!</said> he said <said who="Simon Dedalus">piously. To think of the men of those <lb n="21295"></lb>
           times, Stephen, Hely Hutchinson and Flood and Henry Grattan <lb n="21296"></lb>
           and Charles Kendal Bushe, and the noblemen we have now, <lb n="21297"></lb>
           leaders of the Irish people at home and abroad. Why, by God, <lb n="21298"></lb>
@@ -567,7 +491,7 @@ Original:
               <said who="prostitute">―Give me a kiss, she said. <lb n="21445"></lb></said>
 
 Fix 1:
-              <said who="prostitute">―Give me a kiss,</said> she said. <said who="???"><lb n="21445"></lb></said>
+              <said who="prostitute">―Give me a kiss,</said> she said. <said who="prostitute"><lb n="21445"></lb></said>
 
 Fix 2:
               <said who="prostitute">―Give me a kiss,</said> she said. <lb n="21445"></lb>
@@ -657,7 +581,7 @@ Original:
             promise to God, will you not?<lb n="31529"></lb> </said>
 
 Fix 1:
-              <said who="Priest">―You are very young, my child,</said> he said, <said who="???">and let me implore of <lb n="31516"></lb>
+              <said who="Priest">―You are very young, my child,</said> he said, <said who="Priest">and let me implore of <lb n="31516"></lb>
             you to give up that sin. It is a terrible sin. It kills the body and <lb n="31517"></lb>
             it kills the soul. It is the cause of many crimes and misfortunes. <lb n="31518"></lb>
             Give it up, my child, for God' sake. It is dishonourable and <lb n="31519"></lb>
@@ -701,7 +625,7 @@ Original:
             college whom God designs to call to Himself.<lb n="40378"></lb></said>
 
 Fix 1:
-              <said who="Priest">―In a college like this,</said> he said <said who="???">at length, there is one boy or <lb n="40371"></lb>
+              <said who="Priest">―In a college like this,</said> he said <said who="Priest">at length, there is one boy or <lb n="40371"></lb>
             perhaps two or three boys whom God calls to the religious life. <lb n="40372"></lb>
             Such a boy is marked off from his companions by his piety, by <lb n="40373"></lb>
             the good example he shows to others. He is looked up to by <lb n="40374"></lb>
@@ -728,7 +652,7 @@ Original:
             time for your lectures. <lb n="50023"></lb> </said>
 
 Fix 1:
-              <said who="Mary Dedalus">―An hour and twentyfive minutes,</said> she said. <said who="???">The right time <lb n="50021"></lb>
+              <said who="Mary Dedalus">―An hour and twentyfive minutes,</said> she said. <said who="Mary Dedalus">The right time <lb n="50021"></lb>
             now is  twenty past ten. The dear knows you might try to be in <lb n="50022"></lb>
             time for your lectures. <lb n="50023"></lb> </said>
 
@@ -744,7 +668,7 @@ Original:
             so dirty that his mother has to wash him. <lb n="50033"></lb> </said>
 
 Fix 1:
-              <said who="Mary Dedalus">―Well, it's a poor case,</said> she said, <said who="???">when a university student is <lb n="50032"></lb>
+              <said who="Mary Dedalus">―Well, it's a poor case,</said> she said, <said who="Mary Dedalus">when a university student is <lb n="50032"></lb>
             so dirty that his mother has to wash him. <lb n="50033"></lb> </said>
 
 Fix 2:
@@ -885,7 +809,7 @@ Original:
             tone and to pronounce the word <emph>science</emph> as a monosyllable.<lb n="50708"></lb></said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―That thought is not mine,</said> he said <said who="???">to himself quickly. It came <lb n="50702"></lb>
+              <said who="Stephen Dedalus">―That thought is not mine,</said> he said <said who="Stephen Dedalus">to himself quickly. It came <lb n="50702"></lb>
             from the comic Irishman in the bench behind. Patience. Can <lb n="50703"></lb>
             you say with certitude by whom the soul of your race was <lb n="50704"></lb>
             bartered and its elect betrayed – by the questioner or  by the <lb n="50705"></lb>
@@ -923,7 +847,7 @@ Original:
             to go your way. Leave me to go mine.<lb n="50881"></lb> </said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―My signature is of no account,</said> he said <said who="???">politely. You are right <lb n="50880"></lb>
+              <said who="Stephen Dedalus">―My signature is of no account,</said> he said <said who="Stephen Dedalus">politely. You are right <lb n="50880"></lb>
             to go your way. Leave me to go mine.<lb n="50881"></lb> </said>
 
 Fix 2:
@@ -972,7 +896,7 @@ Original:
             he as innocent as his speech?</emph><lb n="51017"></lb> </said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―Do you remember,</said> he said, <said who="???">when we knew each other first. <lb n="51012"></lb>
+              <said who="Stephen Dedalus">―Do you remember,</said> he said, <said who="Stephen Dedalus">when we knew each other first. <lb n="51012"></lb>
             The first morning we met you asked me to show you the <lb n="51013"></lb>
             way to the matriculation class, putting a very strong stress on <lb n="51014"></lb>
             the first syllable. You remember? Then you used to address the <lb n="51015"></lb>
@@ -998,7 +922,7 @@ Original:
             fly by those nets.<lb n="51050"></lb></said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―The soul is born,</said> he said <said who="???">vaguely, first in those moments I <lb n="51045"></lb>
+              <said who="Stephen Dedalus">―The soul is born,</said> he said <said who="Stephen Dedalus">vaguely, first in those moments I <lb n="51045"></lb>
             told you of. It has a slow and dark birth, more mysterious than <lb n="51046"></lb>
             the birth of the body. When the soul of a man is born in this <lb n="51047"></lb>
             country there are nets flung at it to hold it back from flight. <lb n="51048"></lb>
@@ -1034,7 +958,7 @@ Original:
             made up your mind to swear in yellow.<lb n="51079"></lb></said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―It was a great day for European culture,</said> he said, <said who="???">when you <lb n="51078"></lb>
+              <said who="Stephen Dedalus">―It was a great day for European culture,</said> he said, <said who="Stephen Dedalus">when you <lb n="51078"></lb>
             made up your mind to swear in yellow.<lb n="51079"></lb></said>
 
 Fix 2:
@@ -1068,7 +992,7 @@ Original:
             to understand – that is art.<lb n="51169"></lb></said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―We are right,</said> he said, <said who="???">and the others are wrong. To speak of <lb n="51163"></lb>
+              <said who="Stephen Dedalus">―We are right,</said> he said, <said who="Stephen Dedalus">and the others are wrong. To speak of <lb n="51163"></lb>
             these things and to try to understand their nature and, having <lb n="51164"></lb>
             understood it, to try slowly and humbly and constantly to <lb n="51165"></lb>
             express, to press out again, from the gross earth or what it <lb n="51166"></lb>
@@ -1803,7 +1727,7 @@ Original:
               <said who="Stephen Dedalus">―I don't know what your words mean, he said simply.<lb n="52349"></lb> </said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―I don't know what your words mean,</said> he said <said who="???">simply.<lb n="52349"></lb> </said>
+              <said who="Stephen Dedalus">―I don't know what your words mean,</said> he said <said who="Stephen Dedalus">simply.<lb n="52349"></lb> </said>
 
 Fix 2:
               <said who="Stephen Dedalus">―I don't know what your words mean,</said> he said simply.<lb n="52349"></lb> 
@@ -1832,7 +1756,7 @@ Original:
               do that still .....<lb n="52359"></lb></said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―I tried to love God,</said> he said <said who="???">at length. It seems now I failed. It <lb n="52356"></lb>
+              <said who="Stephen Dedalus">―I tried to love God,</said> he said <said who="Stephen Dedalus">at length. It seems now I failed. It <lb n="52356"></lb>
               is very difficult. I tried to unite my will with the will of God <lb n="52357"></lb>
               instant by instant. In that I did not always fail. I could perhaps <lb n="52358"></lb>
               do that still .....<lb n="52359"></lb></said>
@@ -2077,7 +2001,7 @@ Original:
               cunning.<lb n="52580"></lb></said>
 
 Fix 1:
-              <said who="Stephen Dedalus">―Look here, Cranly,</said> he said. <said who="???">You have asked me what I would <lb n="52573"></lb>
+              <said who="Stephen Dedalus">―Look here, Cranly,</said> he said. <said who="Stephen Dedalus">You have asked me what I would <lb n="52573"></lb>
               do and what I would not do. I will tell you what I will do and <lb n="52574"></lb>
               what I will not do. I will not serve that in which I no longer <lb n="52575"></lb>
               believe whether it call itself my home, my fatherland or my <lb n="52576"></lb>
