@@ -2,7 +2,7 @@ from textgenrnn import textgenrnn
 import os
 
 # Files for weights and stripped text
-H5ORIG='weights_original.h5'
+H5ORIG='weights_original.hdf5'
 H5FILE = 'weights_08lestrygonians.hdf5'
 DATFILE = 'ulysses_08lestrygonians.dat'
 
